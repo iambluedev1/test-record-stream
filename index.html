@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .space {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="space">
+        <button id="startRecordButton">startRecordButton</button>
+        <button id="stopRecordButton" style="display:none">stopRecordButton</button>
+    </div>
+    <div class="space" id="errorStatus" style="display:none"></div>
+    <div>
+        <video id="preview" style="width: 25%;" autoplay muted="true"></video>
+        <video id="recording" style="width: 25%;display:none" autoplay controls></video>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
